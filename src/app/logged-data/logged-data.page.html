@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>logged-data</ion-title>
+    <ion-buttons slot="start">
+        <ion-back-button (click)="back()"></ion-back-button>
+    </ion-buttons>  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+    <div class="ion-padding" >
+      <ion-card id = 'cardone'>
+        <ion-card-header>
+          Hours Slept x Time
+        </ion-card-header>
+        <ion-card-content>
+          <canvas style="position: relative; height:100vh; width:100vw" #sleepCanvas></canvas>
+        </ion-card-content>
+      </ion-card>
+      <ion-card id = 'cardtwo'>
+          <ion-card-header>
+            Experience x Time
+          </ion-card-header>
+          <ion-card-content>
+            <canvas #expCanvas style="position: relative; height:100vh; width:100vw" ></canvas>
+          </ion-card-content>
+        </ion-card>
+    </div>
+  </ion-content>

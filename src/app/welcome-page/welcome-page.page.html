@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Welcome</ion-title>
+    <ion-buttons slot="start">
+        <ion-back-button (click)="back()"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+  
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-button (click) = "viewData()">
+      View Logged Data
+    </ion-button>
+  </ion-item>
+  <ion-item>
+      <ion-button (click) = "presentModal()">
+        Log New Data
+      </ion-button>
+    </ion-item>
+
+
+</ion-content>

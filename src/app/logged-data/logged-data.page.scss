@@ -1,0 +1,15 @@
+.ionpadding {
+    position: relative;
+  }
+  
+  .ionpadding > canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+  }
+  
+  .ionpadding{
+    width: 15000px;
+    overflow-x: scroll;
+  }

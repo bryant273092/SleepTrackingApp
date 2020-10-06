@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>logExperience</ion-title>
+    <ion-item>
+      <ion-button (click) = 'dismiss()'>Exit</ion-button>
+    </ion-item>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-item>
+  <ion-label>
+    Enter Time
+  </ion-label>
+  <ion-datetime [(ngModel)] = 'eventtime'></ion-datetime>
+</ion-item>
+<ion-item>
+  <ion-label>
+    Enter Feeling on 1-7 Scale
+  </ion-label>
+  <ion-range min = '1' max ='7' snaps = 'true' ticks = 'true' pin = 'true' [(ngModel)] = 'experience'></ion-range>
+</ion-item>
+<ion-item>
+  <ion-button (click) = 'enterForm()'>
+    Enter
+  </ion-button>
+</ion-item>
+</ion-content>

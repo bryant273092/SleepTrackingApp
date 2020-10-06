@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>logSleep</ion-title>
+  </ion-toolbar>
+  <ion-item>
+    <ion-button (click) = 'dismiss()'>Exit</ion-button>
+  </ion-item>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    <ion-label>Enter Date</ion-label>
+    <ion-datetime placeholder = "Dec 5, 2019" [(ngModel)] = 'eventDate'></ion-datetime>
+  </ion-item>
+  <ion-item>
+    <ion-label>Enter Start Time</ion-label>
+    <ion-datetime displayFormat="HH:mm A" [(ngModel)] = 'startTime'></ion-datetime>
+  </ion-item>
+  <ion-item>
+    <ion-label>Enter End Time</ion-label>
+    <ion-datetime displayFormat="HH:mm A" [(ngModel)] = 'endTime'></ion-datetime>
+  </ion-item>
+  <ion-item>
+    <ion-button (click) = "enterForm()">
+      Enter
+    </ion-button>
+  </ion-item>
+</ion-content>
